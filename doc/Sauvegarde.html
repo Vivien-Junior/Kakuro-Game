@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>class Sauvegarde - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+  var index_rel_prefix = "./";
+</script>
+
+<script src="./js/jquery.js"></script>
+<script src="./js/darkfish.js"></script>
+
+<link href="./css/fonts.css" rel="stylesheet">
+<link href="./css/rdoc.css" rel="stylesheet">
+
+
+
+<body id="top" role="document" class="class">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="./index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="./table_of_contents.html#pages">Pages</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="class-metadata">
+    
+    <div id="parent-class-section" class="nav-section">
+  <h3>Parent</h3>
+
+  
+  <p class="link"><a href="Object.html">Object</a>
+  
+</div>
+
+    
+    
+    <!-- Method Quickref -->
+<div id="method-list-section" class="nav-section">
+  <h3>Methods</h3>
+
+  <ul class="link-list" role="directory">
+    
+    <li ><a href="#method-c-debuter">::debuter</a>
+    
+    <li ><a href="#method-c-new">::new</a>
+    
+    <li ><a href="#method-i-charger">#charger</a>
+    
+    <li ><a href="#method-i-chargerScores">#chargerScores</a>
+    
+    <li ><a href="#method-i-majCoup">#majCoup</a>
+    
+    <li ><a href="#method-i-redo">#redo</a>
+    
+    <li ><a href="#method-i-reinitialisationListes">#reinitialisationListes</a>
+    
+    <li ><a href="#method-i-reinitialiseScore">#reinitialiseScore</a>
+    
+    <li ><a href="#method-i-undo">#undo</a>
+    
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-labelledby="class-Sauvegarde">
+  <h1 id="class-Sauvegarde" class="class">
+    class Sauvegarde
+  </h1>
+
+  <section class="description">
+    
+  </section>
+
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+    <section class="attribute-method-details" class="method-section">
+      <header>
+        <h3>Attributes</h3>
+      </header>
+
+      
+      <div id="attribute-i-listeRedo" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">listeRedo</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        <p><code>listeRedo</code> - liste contenant les grilles qui ont été annulées
+au cours de la partie</p>
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-listeUndo" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">listeUndo</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        <p><code>listeUndo</code> - liste contenant les grilles qui peuvent être
+annulées (les derniers coups effectués)</p>
+        
+        </div>
+      </div>
+      
+    </section>
+    
+
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Class Methods</h3>
+       </header>
+
+    
+      <div id="method-c-debuter" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">debuter</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>constructeur</p>
+          
+          
+
+          
+          <div class="method-source-code" id="debuter-source">
+            <pre><span class="ruby-comment"># File Sources/Sauvegarde.rb, line 46</span>
+<span class="ruby-keyword">def</span> <span class="ruby-constant">Sauvegarde</span>.<span class="ruby-identifier ruby-title">debuter</span>()
+    <span class="ruby-identifier">new</span>()
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-c-new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre><span class="ruby-comment"># File Sources/Sauvegarde.rb, line 10</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">initialize</span>()
+    <span class="ruby-ivar">@listeRedo</span>= <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>()
+            <span class="ruby-ivar">@listeUndo</span>= <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>()
+
+            <span class="ruby-comment"># fichiers des classements</span>
+    <span class="ruby-keyword">unless</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">directory?</span>(<span class="ruby-string">&#39;classement&#39;</span>)
+        <span class="ruby-constant">Dir</span>.<span class="ruby-identifier">mkdir</span>(<span class="ruby-string">&quot;classement&quot;</span>,<span class="ruby-value">0777</span>)
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">unless</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">exist?</span>(<span class="ruby-string">&#39;classement/global.txt&#39;</span>)
+        <span class="ruby-constant">File</span>.<span class="ruby-identifier">open</span>(<span class="ruby-string">&#39;classement/global.txt&#39;</span>,<span class="ruby-string">&#39;w&#39;</span>)
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">unless</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">exist?</span>(<span class="ruby-string">&#39;classement/facile.txt&#39;</span>)
+          <span class="ruby-constant">File</span>.<span class="ruby-identifier">open</span>(<span class="ruby-string">&quot;classement/facile.txt&quot;</span>,<span class="ruby-string">&#39;w&#39;</span>)
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">unless</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">exist?</span>(<span class="ruby-string">&#39;classement/moyen.txt&#39;</span>)
+          <span class="ruby-constant">File</span>.<span class="ruby-identifier">open</span>(<span class="ruby-string">&quot;classement/moyen.txt&quot;</span>,<span class="ruby-string">&#39;w&#39;</span>)
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">unless</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">exist?</span>(<span class="ruby-string">&#39;classement/difficile.txt&#39;</span>)
+          <span class="ruby-constant">File</span>.<span class="ruby-identifier">open</span>(<span class="ruby-string">&quot;classement/difficile.txt&quot;</span>,<span class="ruby-string">&#39;w&#39;</span>)
+    <span class="ruby-keyword">end</span>
+            <span class="ruby-keyword">unless</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">directory?</span>(<span class="ruby-string">&#39;Sauvegarde&#39;</span>)
+                            <span class="ruby-constant">Dir</span>.<span class="ruby-identifier">mkdir</span>(<span class="ruby-string">&quot;Sauvegarde&quot;</span>,<span class="ruby-value">0777</span>)
+            <span class="ruby-keyword">end</span>
+            <span class="ruby-keyword">unless</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">directory?</span>(<span class="ruby-string">&#39;Sauvegarde/facile&#39;</span>)
+            <span class="ruby-constant">Dir</span>.<span class="ruby-identifier">mkdir</span>(<span class="ruby-string">&#39;Sauvegarde/facile&#39;</span>,<span class="ruby-value">0777</span>)
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">unless</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">directory?</span>(<span class="ruby-string">&#39;Sauvegarde/moyen&#39;</span>)
+        <span class="ruby-constant">Dir</span>.<span class="ruby-identifier">mkdir</span>(<span class="ruby-string">&#39;Sauvegarde/moyen&#39;</span>,<span class="ruby-value">0777</span>)
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">unless</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">directory?</span>(<span class="ruby-string">&#39;Sauvegarde/difficile&#39;</span>)
+        <span class="ruby-constant">Dir</span>.<span class="ruby-identifier">mkdir</span>(<span class="ruby-string">&#39;Sauvegarde/difficile&#39;</span>,<span class="ruby-value">0777</span>)
+    <span class="ruby-keyword">end</span>
+
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Instance Methods</h3>
+       </header>
+
+    
+      <div id="method-i-charger" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">charger</span><span
+            class="method-args">(nomFichier)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Méthode qui, à partir d&#39;un nom de fichier passé en paramètre, récupère
+la sauvegarde correspondante et instancie un objet <a
+href="Partie.html">Partie</a> Elle renvoie une copie de l&#39;objet
+instancié (un “pointeur” sur l&#39;adresse qui contient l&#39;objet)</p>
+
+<h4 id="method-i-charger-label-param-C3-A8tres">paramètres<span><a href="#method-i-charger-label-param-C3-A8tres">&para;</a> <a href="#top">&uarr;</a></span></h4>
+<ul><li>
+<p><code>nomFichier</code> - nom du fichier à aller charger dans le dossier
+Sauvegarde/{difficulte}/nomFichier</p>
+</li></ul>
+
+<h4 id="method-i-charger-label-Exemples">Exemples<span><a href="#method-i-charger-label-Exemples">&para;</a> <a href="#top">&uarr;</a></span></h4>
+
+<pre class="ruby"><span class="ruby-identifier">sauv</span> = <span class="ruby-constant">Sauvegarde</span>.<span class="ruby-identifier">debuter</span> ()
+<span class="ruby-identifier">partie</span> = <span class="ruby-constant">Partie</span>.<span class="ruby-identifier">creer</span>(<span class="ruby-string">&quot;nomJoueur&quot;</span>)
+<span class="ruby-identifier">partie</span>.<span class="ruby-identifier">setNiveau</span>(<span class="ruby-string">&quot;niveau 1&quot;</span>);
+<span class="ruby-identifier">partie</span>.<span class="ruby-identifier">setDifficulte</span>(<span class="ruby-string">&quot;facile&quot;</span>);
+<span class="ruby-identifier">partie</span>.<span class="ruby-identifier">nomPartie</span> = <span class="ruby-node">&quot;#{partie.joueur().downcase()}_#{partie.niveau().split(&#39; &#39;)[1]}_#{Date.today.to_s}&quot;</span>
+<span class="ruby-identifier">partie</span>.<span class="ruby-identifier">marshal_dump</span>(<span class="ruby-identifier">partie</span>.<span class="ruby-identifier">nomPartie</span>())
+<span class="ruby-identifier">sauv</span>.<span class="ruby-identifier">charger</span>(<span class="ruby-identifier">partie</span>.<span class="ruby-identifier">nomPartie</span>())
+</pre>
+          
+          
+
+          
+          <div class="method-source-code" id="charger-source">
+            <pre><span class="ruby-comment"># File Sources/Sauvegarde.rb, line 65</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">charger</span>(<span class="ruby-identifier">nomFichier</span>)
+
+    <span class="ruby-identifier">tabPartieChargee</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>()
+            <span class="ruby-keyword">begin</span>
+            <span class="ruby-keyword">if</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">exists?</span>(<span class="ruby-identifier">nomFichier</span>) <span class="ruby-keyword">then</span>
+                <span class="ruby-constant">File</span>.<span class="ruby-identifier">open</span>(<span class="ruby-identifier">nomFichier</span>){ <span class="ruby-operator">|</span><span class="ruby-identifier">f</span><span class="ruby-operator">|</span>
+                    <span class="ruby-identifier">tabPartieChargee</span> = <span class="ruby-constant">Marshal</span>.<span class="ruby-identifier">load</span>(<span class="ruby-identifier">f</span>)
+                }
+                <span class="ruby-comment">#on crée une nouvelle partie avec les objets récupérés</span>
+                <span class="ruby-identifier">partie</span> = <span class="ruby-constant">Partie</span>.<span class="ruby-identifier">creer</span>(<span class="ruby-identifier">tabPartieChargee</span>[<span class="ruby-value">0</span>],<span class="ruby-identifier">tabPartieChargee</span>[<span class="ruby-value">7</span>],<span class="ruby-identifier">tabPartieChargee</span>[<span class="ruby-value">8</span>])
+                            <span class="ruby-identifier">partie</span>.<span class="ruby-identifier">grille</span> = <span class="ruby-identifier">tabPartieChargee</span>[<span class="ruby-value">1</span>]
+                <span class="ruby-identifier">partie</span>.<span class="ruby-identifier">date</span> = <span class="ruby-identifier">tabPartieChargee</span>[<span class="ruby-value">2</span>]
+                <span class="ruby-identifier">partie</span>.<span class="ruby-identifier">score</span> = <span class="ruby-identifier">tabPartieChargee</span>[<span class="ruby-value">3</span>]
+                <span class="ruby-identifier">partie</span>.<span class="ruby-identifier">chrono</span> = <span class="ruby-identifier">tabPartieChargee</span>[<span class="ruby-value">4</span>]
+                <span class="ruby-identifier">partie</span>.<span class="ruby-identifier">grilleValide</span> = <span class="ruby-identifier">tabPartieChargee</span>[<span class="ruby-value">5</span>]
+                            <span class="ruby-identifier">partie</span>.<span class="ruby-identifier">nomPartie</span> = <span class="ruby-identifier">tabPartieChargee</span>[<span class="ruby-value">6</span>]
+                <span class="ruby-identifier">partie</span>.<span class="ruby-identifier">niveau</span> = <span class="ruby-identifier">tabPartieChargee</span>[<span class="ruby-value">7</span>]
+                <span class="ruby-identifier">partie</span>.<span class="ruby-identifier">difficulte</span> = <span class="ruby-identifier">tabPartieChargee</span>[<span class="ruby-value">8</span>]
+                            <span class="ruby-identifier">partie</span>.<span class="ruby-identifier">aideVisuelle</span> = <span class="ruby-identifier">tabPartieChargee</span>[<span class="ruby-value">9</span>]
+                            <span class="ruby-identifier">partie</span>.<span class="ruby-identifier">enCours</span> = <span class="ruby-identifier">tabPartieChargee</span>[<span class="ruby-value">10</span>]
+                    <span class="ruby-keyword">end</span>
+        <span class="ruby-keyword">rescue</span>
+        <span class="ruby-identifier">raise</span>(<span class="ruby-node">&quot;\n[ERREUR]:La sauvegarde #{nomFichier} n&#39;a pas pu être lu ou n&#39;existe pas\n&quot;</span>)
+    <span class="ruby-keyword">end</span>
+
+    <span class="ruby-comment"># renvoie un tableau &quot;empty&quot; si il n&#39;a pas trouvé le nom du fichier</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-identifier">partie</span>.<span class="ruby-identifier">dup</span>    <span class="ruby-comment"># retourne un &quot;pointeur&quot; sur l objet instancié ici,</span>
+                         <span class="ruby-comment"># il n&#39;y a pas de problème puisque, à priori on ne fera pas appel à &quot;partie&quot; (à voir si meilleure idée faire proposition...)</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-chargerScores" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">chargerScores</span><span
+            class="method-args">(difficulte)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Méthode qui récupère la liste des scores et l&#39;affiche faire un algo qui
+fait un classement par rapport aux scores obtenus, sinon affiche dans
+l&#39;ordre chronologique de sauvegarde des scores</p>
+
+<h4 id="method-i-chargerScores-label-param-C3-A8tres">paramètres<span><a href="#method-i-chargerScores-label-param-C3-A8tres">&para;</a> <a href="#top">&uarr;</a></span></h4>
+<ul><li>
+<p><code>difficulte</code> - difficulté de jeu (facile, moyen, difficile)</p>
+</li></ul>
+
+<h4 id="method-i-chargerScores-label-Exemples">Exemples<span><a href="#method-i-chargerScores-label-Exemples">&para;</a> <a href="#top">&uarr;</a></span></h4>
+
+<pre class="ruby"><span class="ruby-identifier">sauv</span> = <span class="ruby-constant">Sauvegarde</span>.<span class="ruby-identifier">debuter</span> ()
+<span class="ruby-identifier">tab</span> = <span class="ruby-identifier">sauv</span>.<span class="ruby-identifier">chargerScores</span>(<span class="ruby-string">&quot;facile&quot;</span>.<span class="ruby-identifier">downcase</span>)
+</pre>
+          
+          
+
+          
+          <div class="method-source-code" id="chargerScores-source">
+            <pre><span class="ruby-comment"># File Sources/Sauvegarde.rb, line 106</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">chargerScores</span>(<span class="ruby-identifier">difficulte</span>)
+    <span class="ruby-identifier">tableauScore</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>()
+            <span class="ruby-keyword">begin</span>
+            <span class="ruby-identifier">file</span> = <span class="ruby-constant">File</span>.<span class="ruby-identifier">open</span>(<span class="ruby-node">&quot;classement/#{difficulte}.txt&quot;</span>)
+                    <span class="ruby-keyword">if</span>(<span class="ruby-operator">!</span><span class="ruby-constant">File</span>.<span class="ruby-identifier">zero?</span>(<span class="ruby-identifier">file</span>)) <span class="ruby-comment"># si le fichier est pas vide</span>
+                   <span class="ruby-identifier">file_data</span> = <span class="ruby-identifier">file</span>.<span class="ruby-identifier">readlines</span>.<span class="ruby-identifier">map</span>(<span class="ruby-operator">&amp;</span><span class="ruby-value">:chomp</span>).<span class="ruby-identifier">pop</span>.<span class="ruby-identifier">split</span>(<span class="ruby-string">&quot;;&quot;</span>)
+                   <span class="ruby-identifier">file_data</span>.<span class="ruby-identifier">each</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">joueurEtScore</span><span class="ruby-operator">|</span>
+                                    <span class="ruby-identifier">tableauScore</span>.<span class="ruby-identifier">append</span>(<span class="ruby-identifier">joueurEtScore</span>);
+                   }
+                    <span class="ruby-keyword">end</span>
+            <span class="ruby-keyword">rescue</span>
+              <span class="ruby-identifier">raise</span> <span class="ruby-node">&quot;Erreur lecture du fichier classement \&quot;classement/#{difficulte}.txt\&quot;&quot;</span>
+            <span class="ruby-keyword">ensure</span>
+              <span class="ruby-identifier">file</span>.<span class="ruby-identifier">close</span>
+            <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-identifier">tableauScore</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-majCoup" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">majCoup</span><span
+            class="method-args">(lagrille)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Met à jour le tableau des états de la grille au fur et à mesure prend en
+paramètre la partie qui contient la grille</p>
+
+<h4 id="method-i-majCoup-label-param-C3-A8tres">paramètres<span><a href="#method-i-majCoup-label-param-C3-A8tres">&para;</a> <a href="#top">&uarr;</a></span></h4>
+<ul><li>
+<p><code>lagrille</code> - grille de jeu</p>
+</li></ul>
+
+<h4 id="method-i-majCoup-label-Exemples">Exemples<span><a href="#method-i-majCoup-label-Exemples">&para;</a> <a href="#top">&uarr;</a></span></h4>
+
+<pre class="ruby"><span class="ruby-identifier">sauv</span> = <span class="ruby-constant">Sauvegarde</span>.<span class="ruby-identifier">debuter</span> ()
+<span class="ruby-identifier">partie</span> = <span class="ruby-constant">Partie</span>.<span class="ruby-identifier">creer</span>(<span class="ruby-string">&quot;unNom&quot;</span>)
+<span class="ruby-identifier">sauv</span>.<span class="ruby-identifier">majCoup</span>(<span class="ruby-identifier">partie</span>.<span class="ruby-identifier">grille</span>())
+</pre>
+          
+          
+
+          
+          <div class="method-source-code" id="majCoup-source">
+            <pre><span class="ruby-comment"># File Sources/Sauvegarde.rb, line 143</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">majCoup</span>(<span class="ruby-identifier">lagrille</span>)
+            <span class="ruby-identifier">unTableau</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>()
+            <span class="ruby-identifier">lagrille</span>.<span class="ruby-identifier">each_index</span>{ <span class="ruby-operator">|</span><span class="ruby-identifier">uneLigne</span><span class="ruby-operator">|</span>
+                    <span class="ruby-identifier">lagrille</span>[<span class="ruby-identifier">uneLigne</span>].<span class="ruby-identifier">each_index</span>{ <span class="ruby-operator">|</span><span class="ruby-identifier">uneColonne</span><span class="ruby-operator">|</span>
+                            <span class="ruby-identifier">uneCase</span> = <span class="ruby-identifier">lagrille</span>[<span class="ruby-identifier">uneLigne</span>][<span class="ruby-identifier">uneColonne</span>]
+                            <span class="ruby-keyword">if</span> (<span class="ruby-identifier">uneCase</span> <span class="ruby-operator">!=</span> <span class="ruby-keyword">nil</span>) <span class="ruby-keyword">then</span>
+                                    <span class="ruby-keyword">if</span>(<span class="ruby-identifier">uneCase</span>.<span class="ruby-identifier">estCaseNombre?</span> ) <span class="ruby-keyword">then</span> <span class="ruby-comment"># si on a une case indication</span>
+                                            <span class="ruby-identifier">unTableau</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-constant">BtnCaseIndication</span>.<span class="ruby-identifier">creer</span>(<span class="ruby-identifier">uneCase</span>.<span class="ruby-identifier">ligne</span>(), <span class="ruby-identifier">uneCase</span>.<span class="ruby-identifier">colonne</span>(), <span class="ruby-identifier">uneCase</span>.<span class="ruby-identifier">valeurH</span>(), <span class="ruby-identifier">uneCase</span>.<span class="ruby-identifier">valeurV</span>())
+                                    <span class="ruby-keyword">elsif</span>(<span class="ruby-identifier">uneCase</span>.<span class="ruby-identifier">estCaseVide?</span> )<span class="ruby-comment"># si on a une case non jouable</span>
+                                            <span class="ruby-identifier">unTableau</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-constant">BtnCaseNonJouable</span>.<span class="ruby-identifier">creer</span>(<span class="ruby-identifier">uneCase</span>.<span class="ruby-identifier">ligne</span>(), <span class="ruby-identifier">uneCase</span>.<span class="ruby-identifier">colonne</span>())
+                                    <span class="ruby-keyword">elsif</span>( <span class="ruby-identifier">uneCase</span>.<span class="ruby-identifier">jouable?</span> ) <span class="ruby-comment">#si on a une case jouable</span>
+                                            <span class="ruby-identifier">uneCaseTemporaire</span> = <span class="ruby-constant">BtnCaseJouable</span>.<span class="ruby-identifier">creer</span>(<span class="ruby-identifier">uneCase</span>.<span class="ruby-identifier">ligne</span>(), <span class="ruby-identifier">uneCase</span>.<span class="ruby-identifier">colonne</span>(), <span class="ruby-identifier">uneCase</span>.<span class="ruby-identifier">laBonneReponse</span>(), <span class="ruby-identifier">uneCase</span>.<span class="ruby-identifier">saisieUtilisateur</span>())
+                                            <span class="ruby-keyword">if</span>(<span class="ruby-identifier">uneCase</span>.<span class="ruby-identifier">saisieUtilisateur</span>() <span class="ruby-operator">!=</span> <span class="ruby-keyword">nil</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">uneCase</span>.<span class="ruby-identifier">saisieUtilisateur</span>() <span class="ruby-operator">!=</span> <span class="ruby-value">0</span>)
+
+                                                    <span class="ruby-identifier">uneCaseTemporaire</span>.<span class="ruby-identifier">set_label</span>(<span class="ruby-identifier">uneCase</span>.<span class="ruby-identifier">saisieUtilisateur</span>().<span class="ruby-identifier">to_s</span>)
+                                            <span class="ruby-keyword">end</span>
+                                            <span class="ruby-identifier">unTableau</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">uneCaseTemporaire</span>
+                                    <span class="ruby-keyword">end</span>
+                            <span class="ruby-keyword">end</span>
+                    }
+            }
+            <span class="ruby-ivar">@listeUndo</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">unTableau</span>
+    <span class="ruby-ivar">@listeRedo</span>.<span class="ruby-identifier">clear</span>() <span class="ruby-comment"># si l utilisateur écrit, on met à zéro la table des redo</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-redo" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">redo</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Redo: Permet de rejouer un coup vers l&#39;avant</p>
+
+<h4 id="method-i-redo-label-Exemples">Exemples<span><a href="#method-i-redo-label-Exemples">&para;</a> <a href="#top">&uarr;</a></span></h4>
+
+<pre class="ruby"><span class="ruby-identifier">sauv</span> = <span class="ruby-constant">Sauvegarde</span>.<span class="ruby-identifier">debuter</span> ()
+<span class="ruby-identifier">sauv</span>.<span class="ruby-identifier">redo</span>()
+</pre>
+          
+          
+
+          
+          <div class="method-source-code" id="redo-source">
+            <pre><span class="ruby-comment"># File Sources/Sauvegarde.rb, line 194</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">redo</span>()
+    <span class="ruby-keyword">if</span>(<span class="ruby-ivar">@listeRedo</span>.<span class="ruby-identifier ruby-title">length</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span>)
+        <span class="ruby-ivar">@listeUndo</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-ivar">@listeRedo</span>.<span class="ruby-identifier">pop</span>()
+    <span class="ruby-keyword">end</span>
+            <span class="ruby-keyword">return</span> <span class="ruby-ivar">@listeUndo</span>.<span class="ruby-identifier">last</span>()
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-reinitialisationListes" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">reinitialisationListes</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>methode de reinitialisation des tableaux de undo/redo utilisée lorsque
+l&#39;on recommence la partie ou lorsque l&#39;on lance une nouvelle
+partie, on efface la liste des undo/redo</p>
+          
+          
+
+          
+          <div class="method-source-code" id="reinitialisationListes-source">
+            <pre><span class="ruby-comment"># File Sources/Sauvegarde.rb, line 170</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">reinitialisationListes</span>()
+        <span class="ruby-ivar">@listeRedo</span>.<span class="ruby-identifier">clear</span>()
+        <span class="ruby-ivar">@listeUndo</span>.<span class="ruby-identifier">clear</span>()
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-reinitialiseScore" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">reinitialiseScore</span><span
+            class="method-args">(difficulte)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Méthode de reinitialisation des scores</p>
+          
+          
+
+          
+          <div class="method-source-code" id="reinitialiseScore-source">
+            <pre><span class="ruby-comment"># File Sources/Sauvegarde.rb, line 125</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">reinitialiseScore</span>(<span class="ruby-identifier">difficulte</span>)
+    <span class="ruby-identifier">file</span> = <span class="ruby-constant">File</span>.<span class="ruby-identifier">open</span>(<span class="ruby-node">&quot;classement/#{difficulte}.txt&quot;</span>)
+            <span class="ruby-identifier">file</span>.<span class="ruby-identifier">close</span>
+            <span class="ruby-constant">File</span>.<span class="ruby-identifier">unlink</span>(<span class="ruby-identifier">file</span>)
+    <span class="ruby-constant">File</span>.<span class="ruby-identifier">open</span>(<span class="ruby-node">&quot;classement/#{difficulte}.txt&quot;</span>,<span class="ruby-string">&#39;w&#39;</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-undo" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">undo</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Undo : Permet de rejouer un coup vers l&#39;arrière</p>
+
+<h4 id="method-i-undo-label-Exemples">Exemples<span><a href="#method-i-undo-label-Exemples">&para;</a> <a href="#top">&uarr;</a></span></h4>
+
+<pre class="ruby"><span class="ruby-identifier">sauv</span> = <span class="ruby-constant">Sauvegarde</span>.<span class="ruby-identifier">debuter</span> ()
+<span class="ruby-identifier">sauv</span>.<span class="ruby-identifier">undo</span>()
+</pre>
+          
+          
+
+          
+          <div class="method-source-code" id="undo-source">
+            <pre><span class="ruby-comment"># File Sources/Sauvegarde.rb, line 180</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">undo</span>()
+            <span class="ruby-keyword">if</span>(<span class="ruby-ivar">@listeUndo</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">1</span>) <span class="ruby-comment"># la liste des undo contient toujours en position .first() la grille de base du jeu</span>
+           <span class="ruby-ivar">@listeRedo</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-ivar">@listeUndo</span>.<span class="ruby-identifier">pop</span>()  <span class="ruby-comment">#on ajoute au tableau redo, la grille qui vient d&#39;être &quot;annulée&quot;</span>
+                    <span class="ruby-keyword">return</span> <span class="ruby-ivar">@listeUndo</span>.<span class="ruby-identifier">last</span>()
+            <span class="ruby-keyword">end</span>
+            <span class="ruby-keyword">return</span> <span class="ruby-ivar">@listeUndo</span>.<span class="ruby-identifier">first</span>()
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+  </section>
+</main>
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="https://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="https://ruby.github.io/rdoc/">RDoc</a> 6.0.1.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

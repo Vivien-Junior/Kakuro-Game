@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>class Combinaison - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+  var index_rel_prefix = "./";
+</script>
+
+<script src="./js/jquery.js"></script>
+<script src="./js/darkfish.js"></script>
+
+<link href="./css/fonts.css" rel="stylesheet">
+<link href="./css/rdoc.css" rel="stylesheet">
+
+
+
+<body id="top" role="document" class="class">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="./index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="./table_of_contents.html#pages">Pages</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="class-metadata">
+    
+    <div id="parent-class-section" class="nav-section">
+  <h3>Parent</h3>
+
+  
+  <p class="link"><a href="Object.html">Object</a>
+  
+</div>
+
+    
+    
+    <!-- Method Quickref -->
+<div id="method-list-section" class="nav-section">
+  <h3>Methods</h3>
+
+  <ul class="link-list" role="directory">
+    
+    <li ><a href="#method-c-creer">::creer</a>
+    
+    <li ><a href="#method-c-new">::new</a>
+    
+    <li ><a href="#method-i-calcul">#calcul</a>
+    
+    <li ><a href="#method-i-multi">#multi</a>
+    
+    <li ><a href="#method-i-setNbCases">#setNbCases</a>
+    
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-labelledby="class-Combinaison">
+  <h1 id="class-Combinaison" class="class">
+    class Combinaison
+  </h1>
+
+  <section class="description">
+    
+<p>classe <a href="Combinaison.html">Combinaison</a></p>
+
+<p>Les objets de cette classes sont caractérisés par : la valeur de la case, 
+le nombre de cases pour effectuer la somme, liste de combinaisons</p>
+
+<p>Les objets de cette classe sont capables de :</p>
+<ul><li>
+<p>D&#39;initialiser la valeur de la case</p>
+</li><li>
+<p>D&#39;initialiser le nombre de cases pour la somme</p>
+</li><li>
+<p>De calculer les combinaisons possibles pour un nombre de cases donné et une
+valeur donnée</p>
+</li></ul>
+
+  </section>
+
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Class Methods</h3>
+       </header>
+
+    
+      <div id="method-c-creer" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">creer</span><span
+            class="method-args">(val,nbCases)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>redéfinition du initialize pour une meilleure compréhension au niveau du
+code</p>
+          
+          
+
+          
+          <div class="method-source-code" id="creer-source">
+            <pre><span class="ruby-comment"># File Sources/Combinaison.rb, line 30</span>
+<span class="ruby-keyword">def</span> <span class="ruby-constant">Combinaison</span>.<span class="ruby-identifier ruby-title">creer</span>(<span class="ruby-identifier">val</span>,<span class="ruby-identifier">nbCases</span>)
+        <span class="ruby-identifier">new</span>(<span class="ruby-identifier">val</span>,<span class="ruby-identifier">nbCases</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-c-new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">(val,nbCases)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Méthode d&#39;instance init()</p>
+
+<p>Initialise une liste de combinaison pour une valeur et un nombre de cases
+donnés</p>
+          
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre><span class="ruby-comment"># File Sources/Combinaison.rb, line 23</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">initialize</span>(<span class="ruby-identifier">val</span>,<span class="ruby-identifier">nbCases</span>)
+        <span class="ruby-ivar">@val</span> = <span class="ruby-identifier">val</span>
+        <span class="ruby-ivar">@nbCases</span> = <span class="ruby-identifier">nbCases</span>
+        <span class="ruby-ivar">@list</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Instance Methods</h3>
+       </header>
+
+    
+      <div id="method-i-calcul" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">calcul</span><span
+            class="method-args">(tabVal)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Méthode d&#39;instance calcul</p>
+
+<p>Permet de calculer toutes les combinaisons possibles pour une valeur et un
+nombre de cases donnés Ne prend pas de paramètre</p>
+          
+          
+
+          
+          <div class="method-source-code" id="calcul-source">
+            <pre><span class="ruby-comment"># File Sources/Combinaison.rb, line 56</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">calcul</span>(<span class="ruby-identifier">tabVal</span>)
+                <span class="ruby-identifier">pos</span> = <span class="ruby-value">0</span>
+                <span class="ruby-comment"># Boucle Case pour chaque cas de nombre de cases possible</span>
+
+                <span class="ruby-keyword">case</span> <span class="ruby-ivar">@nbCases</span>
+                <span class="ruby-keyword">when</span> <span class="ruby-value">2</span>
+                        <span class="ruby-keyword">for</span> <span class="ruby-identifier">i</span> <span class="ruby-keyword">in</span> <span class="ruby-value">1</span><span class="ruby-operator">..</span><span class="ruby-value">9</span> <span class="ruby-keyword">do</span>
+                                <span class="ruby-keyword">for</span> <span class="ruby-identifier">j</span> <span class="ruby-keyword">in</span> <span class="ruby-value">1</span><span class="ruby-operator">..</span><span class="ruby-value">9</span> <span class="ruby-keyword">do</span>
+                                        <span class="ruby-keyword">if</span> <span class="ruby-identifier">i</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">j</span> <span class="ruby-operator">==</span> <span class="ruby-ivar">@val</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">i</span><span class="ruby-operator">!=</span><span class="ruby-identifier">j</span>
+                                                <span class="ruby-identifier">multi</span>(<span class="ruby-identifier">pos</span>,<span class="ruby-value">0</span>,<span class="ruby-identifier">i</span>)
+                                                <span class="ruby-identifier">multi</span>(<span class="ruby-identifier">pos</span>,<span class="ruby-value">1</span>,<span class="ruby-identifier">j</span>)
+                                                <span class="ruby-identifier">pos</span> <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>
+                                        <span class="ruby-keyword">end</span>
+                                <span class="ruby-keyword">end</span>
+                        <span class="ruby-keyword">end</span>
+                
+                <span class="ruby-keyword">when</span> <span class="ruby-value">3</span>
+                        <span class="ruby-keyword">for</span> <span class="ruby-identifier">i</span> <span class="ruby-keyword">in</span> <span class="ruby-value">1</span><span class="ruby-operator">..</span><span class="ruby-value">9</span> <span class="ruby-keyword">do</span>
+                                <span class="ruby-keyword">for</span> <span class="ruby-identifier">j</span> <span class="ruby-keyword">in</span> <span class="ruby-value">1</span><span class="ruby-operator">..</span><span class="ruby-value">9</span> <span class="ruby-keyword">do</span>
+                                        <span class="ruby-keyword">for</span> <span class="ruby-identifier">k</span> <span class="ruby-keyword">in</span> <span class="ruby-value">1</span><span class="ruby-operator">..</span><span class="ruby-value">9</span> <span class="ruby-keyword">do</span>
+                                                <span class="ruby-keyword">if</span> <span class="ruby-identifier">i</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">j</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">k</span> <span class="ruby-operator">==</span> <span class="ruby-ivar">@val</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">i</span><span class="ruby-operator">!=</span><span class="ruby-identifier">j</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">i</span><span class="ruby-operator">!=</span><span class="ruby-identifier">k</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">j</span><span class="ruby-operator">!=</span><span class="ruby-identifier">k</span>
+                                                        <span class="ruby-identifier">multi</span>(<span class="ruby-identifier">pos</span>,<span class="ruby-value">0</span>,<span class="ruby-identifier">i</span>)
+                                                        <span class="ruby-identifier">multi</span>(<span class="ruby-identifier">pos</span>,<span class="ruby-value">1</span>,<span class="ruby-identifier">j</span>)
+                                                        <span class="ruby-identifier">multi</span>(<span class="ruby-identifier">pos</span>,<span class="ruby-value">2</span>,<span class="ruby-identifier">k</span>)
+                                                        <span class="ruby-identifier">pos</span> <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>
+                                                <span class="ruby-keyword">end</span>
+                                        <span class="ruby-keyword">end</span>
+                                <span class="ruby-keyword">end</span>
+                        <span class="ruby-keyword">end</span>
+                
+                <span class="ruby-keyword">when</span> <span class="ruby-value">4</span>
+                        <span class="ruby-keyword">for</span> <span class="ruby-identifier">i</span> <span class="ruby-keyword">in</span> <span class="ruby-value">1</span><span class="ruby-operator">..</span><span class="ruby-value">9</span> <span class="ruby-keyword">do</span>
+                                <span class="ruby-keyword">for</span> <span class="ruby-identifier">j</span> <span class="ruby-keyword">in</span> <span class="ruby-value">1</span><span class="ruby-operator">..</span><span class="ruby-value">9</span> <span class="ruby-keyword">do</span>
+                                        <span class="ruby-keyword">for</span> <span class="ruby-identifier">k</span> <span class="ruby-keyword">in</span> <span class="ruby-value">1</span><span class="ruby-operator">..</span><span class="ruby-value">9</span> <span class="ruby-keyword">do</span>
+                                                <span class="ruby-keyword">for</span> <span class="ruby-identifier">l</span> <span class="ruby-keyword">in</span> <span class="ruby-value">1</span><span class="ruby-operator">..</span><span class="ruby-value">9</span> <span class="ruby-keyword">do</span>
+                                                        <span class="ruby-keyword">if</span> <span class="ruby-identifier">i</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">j</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">k</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">l</span> <span class="ruby-operator">==</span> <span class="ruby-ivar">@val</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">i</span><span class="ruby-operator">!=</span><span class="ruby-identifier">j</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">i</span><span class="ruby-operator">!=</span><span class="ruby-identifier">k</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">j</span><span class="ruby-operator">!=</span><span class="ruby-identifier">k</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">l</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">i</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">l</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">j</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">l</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">k</span>
+                                                                <span class="ruby-identifier">multi</span>(<span class="ruby-identifier">pos</span>,<span class="ruby-value">0</span>,<span class="ruby-identifier">i</span>)
+                                                                <span class="ruby-identifier">multi</span>(<span class="ruby-identifier">pos</span>,<span class="ruby-value">1</span>,<span class="ruby-identifier">j</span>)
+                                                                <span class="ruby-identifier">multi</span>(<span class="ruby-identifier">pos</span>,<span class="ruby-value">2</span>,<span class="ruby-identifier">k</span>)
+                                                                <span class="ruby-identifier">multi</span>(<span class="ruby-identifier">pos</span>,<span class="ruby-value">3</span>,<span class="ruby-identifier">l</span>)
+                                                                <span class="ruby-identifier">pos</span> <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>
+                                                        <span class="ruby-keyword">end</span>
+                                                <span class="ruby-keyword">end</span>
+                                        <span class="ruby-keyword">end</span>
+                                <span class="ruby-keyword">end</span>
+                        <span class="ruby-keyword">end</span>
+
+                <span class="ruby-keyword">when</span> <span class="ruby-value">5</span>
+                        <span class="ruby-keyword">for</span> <span class="ruby-identifier">i</span> <span class="ruby-keyword">in</span> <span class="ruby-value">1</span><span class="ruby-operator">..</span><span class="ruby-value">9</span> <span class="ruby-keyword">do</span>
+                                <span class="ruby-keyword">for</span> <span class="ruby-identifier">j</span> <span class="ruby-keyword">in</span> <span class="ruby-value">1</span><span class="ruby-operator">..</span><span class="ruby-value">9</span> <span class="ruby-keyword">do</span>
+                                        <span class="ruby-keyword">for</span> <span class="ruby-identifier">k</span> <span class="ruby-keyword">in</span> <span class="ruby-value">1</span><span class="ruby-operator">..</span><span class="ruby-value">9</span> <span class="ruby-keyword">do</span>
+                                                <span class="ruby-keyword">for</span> <span class="ruby-identifier">l</span> <span class="ruby-keyword">in</span> <span class="ruby-value">1</span><span class="ruby-operator">..</span><span class="ruby-value">9</span> <span class="ruby-keyword">do</span>
+                                                        <span class="ruby-keyword">for</span> <span class="ruby-identifier">m</span> <span class="ruby-keyword">in</span> <span class="ruby-value">1</span><span class="ruby-operator">..</span><span class="ruby-value">9</span> <span class="ruby-keyword">do</span>
+                                                                <span class="ruby-keyword">if</span> <span class="ruby-identifier">i</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">j</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">k</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">l</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">m</span> <span class="ruby-operator">==</span> <span class="ruby-ivar">@val</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">i</span><span class="ruby-operator">!=</span><span class="ruby-identifier">j</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">i</span><span class="ruby-operator">!=</span><span class="ruby-identifier">k</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">j</span><span class="ruby-operator">!=</span><span class="ruby-identifier">k</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">l</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">i</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">l</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">j</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">l</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">k</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">m</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">i</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">m</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">j</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">m</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">k</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">m</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">l</span>
+                                                                        <span class="ruby-identifier">multi</span>(<span class="ruby-identifier">pos</span>,<span class="ruby-value">0</span>,<span class="ruby-identifier">i</span>)
+                                                                        <span class="ruby-identifier">multi</span>(<span class="ruby-identifier">pos</span>,<span class="ruby-value">1</span>,<span class="ruby-identifier">j</span>)
+                                                                        <span class="ruby-identifier">multi</span>(<span class="ruby-identifier">pos</span>,<span class="ruby-value">2</span>,<span class="ruby-identifier">k</span>)
+                                                                        <span class="ruby-identifier">multi</span>(<span class="ruby-identifier">pos</span>,<span class="ruby-value">3</span>,<span class="ruby-identifier">l</span>)
+                                                                        <span class="ruby-identifier">multi</span>(<span class="ruby-identifier">pos</span>,<span class="ruby-value">4</span>,<span class="ruby-identifier">m</span>)
+                                                                        <span class="ruby-identifier">pos</span> <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>
+                                                                <span class="ruby-keyword">end</span>
+                                                        <span class="ruby-keyword">end</span>
+                                                <span class="ruby-keyword">end</span>
+                                        <span class="ruby-keyword">end</span>
+                                <span class="ruby-keyword">end</span>
+                        <span class="ruby-keyword">end</span>
+
+                <span class="ruby-keyword">when</span> <span class="ruby-value">6</span>
+                        <span class="ruby-keyword">for</span> <span class="ruby-identifier">i</span> <span class="ruby-keyword">in</span> <span class="ruby-value">1</span><span class="ruby-operator">..</span><span class="ruby-value">9</span> <span class="ruby-keyword">do</span>
+                                <span class="ruby-keyword">for</span> <span class="ruby-identifier">j</span> <span class="ruby-keyword">in</span> <span class="ruby-value">1</span><span class="ruby-operator">..</span><span class="ruby-value">9</span> <span class="ruby-keyword">do</span>
+                                        <span class="ruby-keyword">for</span> <span class="ruby-identifier">k</span> <span class="ruby-keyword">in</span> <span class="ruby-value">1</span><span class="ruby-operator">..</span><span class="ruby-value">9</span> <span class="ruby-keyword">do</span>
+                                                <span class="ruby-keyword">for</span> <span class="ruby-identifier">l</span> <span class="ruby-keyword">in</span> <span class="ruby-value">1</span><span class="ruby-operator">..</span><span class="ruby-value">9</span> <span class="ruby-keyword">do</span>
+                                                        <span class="ruby-keyword">for</span> <span class="ruby-identifier">m</span> <span class="ruby-keyword">in</span> <span class="ruby-value">1</span><span class="ruby-operator">..</span><span class="ruby-value">9</span> <span class="ruby-keyword">do</span>
+                                                                <span class="ruby-keyword">for</span> <span class="ruby-identifier">n</span> <span class="ruby-keyword">in</span> <span class="ruby-value">1</span><span class="ruby-operator">..</span><span class="ruby-value">9</span> <span class="ruby-keyword">do</span>
+                                                                        <span class="ruby-keyword">if</span> <span class="ruby-identifier">i</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">j</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">k</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">l</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">m</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">n</span> <span class="ruby-operator">==</span> <span class="ruby-ivar">@val</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">i</span><span class="ruby-operator">!=</span><span class="ruby-identifier">j</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">i</span><span class="ruby-operator">!=</span><span class="ruby-identifier">k</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">j</span><span class="ruby-operator">!=</span><span class="ruby-identifier">k</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">l</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">i</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">l</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">j</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">l</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">k</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">m</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">i</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">m</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">j</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">m</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">k</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">m</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">l</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">n</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">i</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">n</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">j</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">n</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">k</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">n</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">l</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">n</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">m</span>
+                                                                                <span class="ruby-identifier">multi</span>(<span class="ruby-identifier">pos</span>,<span class="ruby-value">0</span>,<span class="ruby-identifier">i</span>)
+                                                                                <span class="ruby-identifier">multi</span>(<span class="ruby-identifier">pos</span>,<span class="ruby-value">1</span>,<span class="ruby-identifier">j</span>)
+                                                                                <span class="ruby-identifier">multi</span>(<span class="ruby-identifier">pos</span>,<span class="ruby-value">2</span>,<span class="ruby-identifier">k</span>)
+                                                                                <span class="ruby-identifier">multi</span>(<span class="ruby-identifier">pos</span>,<span class="ruby-value">3</span>,<span class="ruby-identifier">l</span>)
+                                                                                <span class="ruby-identifier">multi</span>(<span class="ruby-identifier">pos</span>,<span class="ruby-value">4</span>,<span class="ruby-identifier">m</span>)
+                                                                                <span class="ruby-identifier">multi</span>(<span class="ruby-identifier">pos</span>,<span class="ruby-value">5</span>,<span class="ruby-identifier">n</span>)
+                                                                                <span class="ruby-identifier">pos</span> <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>
+                                                                        <span class="ruby-keyword">end</span>
+                                                                <span class="ruby-keyword">end</span>
+                                                        <span class="ruby-keyword">end</span>
+                                                <span class="ruby-keyword">end</span>
+                                        <span class="ruby-keyword">end</span>
+                                <span class="ruby-keyword">end</span>
+                        <span class="ruby-keyword">end</span>
+
+                <span class="ruby-keyword">when</span> <span class="ruby-value">7</span>
+                        <span class="ruby-keyword">for</span> <span class="ruby-identifier">i</span> <span class="ruby-keyword">in</span> <span class="ruby-value">1</span><span class="ruby-operator">..</span><span class="ruby-value">9</span> <span class="ruby-keyword">do</span>
+                                <span class="ruby-keyword">for</span> <span class="ruby-identifier">j</span> <span class="ruby-keyword">in</span> <span class="ruby-value">1</span><span class="ruby-operator">..</span><span class="ruby-value">9</span> <span class="ruby-keyword">do</span>
+                                        <span class="ruby-keyword">for</span> <span class="ruby-identifier">k</span> <span class="ruby-keyword">in</span> <span class="ruby-value">1</span><span class="ruby-operator">..</span><span class="ruby-value">9</span> <span class="ruby-keyword">do</span>
+                                                <span class="ruby-keyword">for</span> <span class="ruby-identifier">l</span> <span class="ruby-keyword">in</span> <span class="ruby-value">1</span><span class="ruby-operator">..</span><span class="ruby-value">9</span> <span class="ruby-keyword">do</span>
+                                                        <span class="ruby-keyword">for</span> <span class="ruby-identifier">m</span> <span class="ruby-keyword">in</span> <span class="ruby-value">1</span><span class="ruby-operator">..</span><span class="ruby-value">9</span> <span class="ruby-keyword">do</span>
+                                                                <span class="ruby-keyword">for</span> <span class="ruby-identifier">n</span> <span class="ruby-keyword">in</span> <span class="ruby-value">1</span><span class="ruby-operator">..</span><span class="ruby-value">9</span> <span class="ruby-keyword">do</span>
+                                                                        <span class="ruby-keyword">for</span> <span class="ruby-identifier">o</span> <span class="ruby-keyword">in</span> <span class="ruby-value">1</span><span class="ruby-operator">..</span><span class="ruby-value">9</span> <span class="ruby-keyword">do</span>
+                                                                                <span class="ruby-keyword">if</span> <span class="ruby-identifier">i</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">j</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">k</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">l</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">m</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">n</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">o</span> <span class="ruby-operator">==</span> <span class="ruby-ivar">@val</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">i</span><span class="ruby-operator">!=</span><span class="ruby-identifier">j</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">i</span><span class="ruby-operator">!=</span><span class="ruby-identifier">k</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">j</span><span class="ruby-operator">!=</span><span class="ruby-identifier">k</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">l</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">i</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">l</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">j</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">l</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">k</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">m</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">i</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">m</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">j</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">m</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">k</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">m</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">l</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">n</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">i</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">n</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">j</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">n</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">k</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">n</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">l</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">n</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">m</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">o</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">i</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">o</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">j</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">o</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">k</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">o</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">l</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">o</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">m</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">o</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">n</span>   
+                                                                                        <span class="ruby-identifier">multi</span>(<span class="ruby-identifier">pos</span>,<span class="ruby-value">0</span>,<span class="ruby-identifier">i</span>)
+                                                                                        <span class="ruby-identifier">multi</span>(<span class="ruby-identifier">pos</span>,<span class="ruby-value">1</span>,<span class="ruby-identifier">j</span>)
+                                                                                        <span class="ruby-identifier">multi</span>(<span class="ruby-identifier">pos</span>,<span class="ruby-value">2</span>,<span class="ruby-identifier">k</span>)
+                                                                                        <span class="ruby-identifier">multi</span>(<span class="ruby-identifier">pos</span>,<span class="ruby-value">3</span>,<span class="ruby-identifier">l</span>)
+                                                                                        <span class="ruby-identifier">multi</span>(<span class="ruby-identifier">pos</span>,<span class="ruby-value">4</span>,<span class="ruby-identifier">m</span>)
+                                                                                        <span class="ruby-identifier">multi</span>(<span class="ruby-identifier">pos</span>,<span class="ruby-value">5</span>,<span class="ruby-identifier">n</span>)
+                                                                                        <span class="ruby-identifier">multi</span>(<span class="ruby-identifier">pos</span>,<span class="ruby-value">6</span>,<span class="ruby-identifier">o</span>)
+                                                                                        <span class="ruby-identifier">pos</span> <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>
+                                                                                <span class="ruby-keyword">end</span>
+                                                                        <span class="ruby-keyword">end</span>
+                                                                <span class="ruby-keyword">end</span>
+                                                        <span class="ruby-keyword">end</span>
+                                                <span class="ruby-keyword">end</span>
+                                        <span class="ruby-keyword">end</span>
+                                <span class="ruby-keyword">end</span>
+                        <span class="ruby-keyword">end</span>
+                <span class="ruby-keyword">else</span>
+                        <span class="ruby-comment">#puts &quot;Error&quot;</span>
+                <span class="ruby-keyword">end</span>
+
+                <span class="ruby-comment">#------------------</span>
+                <span class="ruby-comment"># enlever les propositions en fonction de ce que l&#39;utilisateur a rempli ou non</span>
+                <span class="ruby-comment">#------------------</span>
+
+                <span class="ruby-identifier">listTampon</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>{<span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>()}
+
+                <span class="ruby-keyword">if</span> <span class="ruby-identifier">tabVal</span> <span class="ruby-operator">!=</span> []
+                        <span class="ruby-ivar">@list</span>.<span class="ruby-identifier">each</span>{ <span class="ruby-operator">|</span><span class="ruby-identifier">e</span><span class="ruby-operator">|</span>
+                                <span class="ruby-keyword">if</span> <span class="ruby-identifier">e</span>.<span class="ruby-identifier">join</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">tabVal</span>.<span class="ruby-identifier">join</span>)
+                                        <span class="ruby-identifier">listTampon</span><span class="ruby-operator">&lt;&lt;</span><span class="ruby-identifier">e</span>
+                                <span class="ruby-keyword">end</span>
+                        }
+                        <span class="ruby-ivar">@list</span> = <span class="ruby-identifier">listTampon</span>
+                <span class="ruby-keyword">end</span>
+        
+                <span class="ruby-comment">#Effacer les doublons dans la liste</span>
+                <span class="ruby-ivar">@list</span>.<span class="ruby-identifier">each</span>{ <span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span>
+                        <span class="ruby-identifier">x</span>.<span class="ruby-identifier">sort!</span>
+                }
+                        
+                <span class="ruby-comment">#p @list</span>
+                <span class="ruby-keyword">if</span>(<span class="ruby-ivar">@list</span> <span class="ruby-operator">==</span> [])
+                        <span class="ruby-keyword">return</span> <span class="ruby-ivar">@list</span><span class="ruby-operator">&lt;&lt;</span>[<span class="ruby-value">0</span>]
+                <span class="ruby-keyword">else</span>
+                        <span class="ruby-keyword">return</span> <span class="ruby-ivar">@list</span>.<span class="ruby-identifier">uniq!</span>
+                <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-multi" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">multi</span><span
+            class="method-args">(x,y,value)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Méthode d&#39;instance multi</p>
+
+<p>Permet d&#39;initialiser un tableau multidimensionnel (Le tableau va nous
+servir de liste de combinaisons) Prend la position x, la position y et la
+valeur à ajouter dans la liste</p>
+          
+          
+
+          
+          <div class="method-source-code" id="multi-source">
+            <pre><span class="ruby-comment"># File Sources/Combinaison.rb, line 46</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">multi</span>(<span class="ruby-identifier">x</span>,<span class="ruby-identifier">y</span>,<span class="ruby-identifier">value</span>)
+        <span class="ruby-ivar">@list</span>[<span class="ruby-identifier">x</span>] <span class="ruby-operator">||=</span> []
+        <span class="ruby-ivar">@list</span>[<span class="ruby-identifier">x</span>][<span class="ruby-identifier">y</span>] = <span class="ruby-identifier">value</span>
+        <span class="ruby-comment">#p value</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-setNbCases" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">setNbCases</span><span
+            class="method-args">(nC)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Méthode d&#39;instance setNC</p>
+
+<p>Permet de définir le nombre de cases pour effectuer la somme Prend le
+nombre de cases en paramètre</p>
+          
+          
+
+          
+          <div class="method-source-code" id="setNbCases-source">
+            <pre><span class="ruby-comment"># File Sources/Combinaison.rb, line 38</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">setNbCases</span>(<span class="ruby-identifier">nC</span>)
+        <span class="ruby-ivar">@nbCases</span> = <span class="ruby-identifier">nC</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+  </section>
+</main>
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="https://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="https://ruby.github.io/rdoc/">RDoc</a> 6.0.1.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+
